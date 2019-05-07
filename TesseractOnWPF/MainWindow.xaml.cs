@@ -1,4 +1,6 @@
-﻿namespace TesseractOnWPF
+﻿using TesseractOnWPF.ViewModel;
+
+namespace TesseractOnWPF
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -8,6 +10,8 @@
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MainViewModel();
+
         }
     }
 }
