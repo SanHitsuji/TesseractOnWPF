@@ -27,6 +27,7 @@ namespace TesseractOnWPF.Model
                 process.WaitForExit();
                 var textWithExtension = Path.ChangeExtension(textPath, ".txt");
                 text = ReadTextFile(textWithExtension);
+                File.Delete(textWithExtension);
             }
             catch (Exception exception)
             {
