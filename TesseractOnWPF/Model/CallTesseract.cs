@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using System.IO;
 
 namespace TesseractOnWPF.Model
@@ -22,8 +23,16 @@ namespace TesseractOnWPF.Model
                 var imagePath = path;
                 var textPath = Path.GetFileNameWithoutExtension(path);
                 strCmdText = $"/c tesseract {imagePath} {textPath}";
-                var process = System.Diagnostics.Process.Start("CMD.exe", strCmdText);
-
+                ProcessStartInfo startInfo = new ProcessStartInfo();
+                startInfo.FileName = "CMD.exe";
+                startInfo.Arguments = strCmdText;
+                startInfo.RedirectStandardOutput = true;
+                startInfo.RedirectStandardError = true;
+                startInfo.UseShellExecute = false;
+                startInfo.CreateNoWindow = true;
+                var process = new Process();
+                process.StartInfo = startInfo;
+                process.Start();
                 process.WaitForExit();
                 var textWithExtension = Path.ChangeExtension(textPath, ".txt");
                 text = ReadTextFile(textWithExtension);
