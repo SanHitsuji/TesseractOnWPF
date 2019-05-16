@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesseractOnWPF", "TesseractOnWPF\TesseractOnWPF.csproj", "{166FB860-1D36-4068-A90B-B534AA744096}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesseractOnWPF_Test", "TesseractOnWPF_Test\TesseractOnWPF_Test.csproj", "{3C5452C5-D5C4-4B3E-97D3-69D1F69D0EE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{166FB860-1D36-4068-A90B-B534AA744096}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{166FB860-1D36-4068-A90B-B534AA744096}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{166FB860-1D36-4068-A90B-B534AA744096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C5452C5-D5C4-4B3E-97D3-69D1F69D0EE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C5452C5-D5C4-4B3E-97D3-69D1F69D0EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C5452C5-D5C4-4B3E-97D3-69D1F69D0EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C5452C5-D5C4-4B3E-97D3-69D1F69D0EE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
