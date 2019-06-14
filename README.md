@@ -1,0 +1,6 @@
+# TesseractOnWPF
+
+
+## Requirement
+
+- tesseract-ocr 
